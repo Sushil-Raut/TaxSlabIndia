@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TaxSlabIndia/static/css/main.81b2af95.css",
-    "main.js": "/TaxSlabIndia/static/js/main.f194d6e7.js",
+    "main.js": "/TaxSlabIndia/static/js/main.f0225c81.js",
     "static/media/business.jpg": "/TaxSlabIndia/static/media/business.1ea11e03431d9279a450.jpg",
     "static/media/woman.jpg": "/TaxSlabIndia/static/media/woman.bf9e73067c99bdb2593e.jpg",
     "static/media/calculate.jpg": "/TaxSlabIndia/static/media/calculate.70c46d334ab317247a94.jpg",
@@ -17,10 +17,10 @@
     "static/media/slick.woff": "/TaxSlabIndia/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/TaxSlabIndia/index.html",
     "main.81b2af95.css.map": "/TaxSlabIndia/static/css/main.81b2af95.css.map",
-    "main.f194d6e7.js.map": "/TaxSlabIndia/static/js/main.f194d6e7.js.map"
+    "main.f0225c81.js.map": "/TaxSlabIndia/static/js/main.f0225c81.js.map"
   },
   "entrypoints": [
     "static/css/main.81b2af95.css",
-    "static/js/main.f194d6e7.js"
+    "static/js/main.f0225c81.js"
   ]
 }
