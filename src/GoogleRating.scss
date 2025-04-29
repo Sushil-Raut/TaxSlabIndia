@@ -1,0 +1,31 @@
+// src/Styles/GoogleRating.scss
+
+.google-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: sans-serif;
+  
+    .rating-value {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #ffc400;
+    }
+  
+    .stars {
+      color: #ffc400;
+      font-size: 1.2rem;
+    }
+  
+    .review-count {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+  
+    .loading,
+    .error {
+      font-size: 1rem;
+      color: #999;
+    }
+  }
+  

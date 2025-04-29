@@ -1,0 +1,91 @@
+// AntyTerms.scss
+
+.anty-container {
+  max-width: 1200px;
+  margin: -2rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  background-color: #f8f9fa;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #1a237e;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.updated {
+  font-size: 0.95rem;
+  color: #757575;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.anty-card {
+  margin-bottom: 2rem;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    color: #0d47a1;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+
+  p {
+    color: #424242;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    padding-left: 20px;
+
+    li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+      color: #333;
+      list-style-type: disc;
+    }
+  }
+
+  a {
+    color: #1e88e5;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .anty-container {
+    padding: 10px;
+  }
+
+  .anty-card {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}

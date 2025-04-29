@@ -1,0 +1,187 @@
+.payroll-container {
+  // Base container styling
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+  background-color: #f9f9ff;
+  background: linear-gradient(to right, #03536b, #02334f); // Gradient background for main section
+  background: #879099;
+ 
+
+  // Headings styling
+  h1, h2 {
+    // color: #cece17; // Bright yellow for visibility
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  // Paragraph styling
+  p {
+    color: #0c0b0b;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  // Hero section (top banner area)
+  .hero {
+    // background: linear-gradient( #02334f);
+    background: #39707b;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    color: #fff;
+    animation: fadeInUp 1s ease-in-out; // Fade-in animation
+  }
+
+  // Introduction text block
+  .intro {
+    margin-top: 3rem;
+    padding: 0 1rem;
+    animation: fadeIn 1s ease; // Simple fade-in animation
+  }
+
+  // Benefits section with cards
+  .benefits {
+    margin-top: 3rem;
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); // Responsive grid
+      gap: 1.5rem;
+      
+
+      .card {
+        background: #fff;
+        // background: linear-gradient(to right, #03536b, #02334f);
+        background: #39707b;
+        padding: 1.5rem;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        h3 {
+          color: #f6f6fa; // Blue heading inside cards
+        }
+
+        // Hover effects
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+      }
+    }
+  }
+  .process {
+    margin-top: 3rem;            // Same as .intro
+    padding: 3rem 2rem;          // Same as .hero
+    // background: linear-gradient(to right, #3f4717, #02334f);        // Optional light background to separate the section visually
+    border-radius: 20px;         // Optional, for consistency with .hero look
+    background: #39707b;
+  
+    .steps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+
+  
+      .step {
+        // background: #0b658c;
+        background: #39707b;
+        padding: 1rem 2rem;
+        border-radius: 12px;
+        min-width: 200px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        animation: fadeInStep 0.6s ease-in-out;
+  
+        span {
+          display: inline-block;
+          background: #5e5a01;
+          // background: #39707b;
+          color: #fff;
+          font-weight: bold;
+          border-radius: 50%;
+          padding: 0.6rem 1rem;
+          font-size: 1.2rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+  
+
+  // Why Choose Us section with a list
+  .why-choose {
+    margin-top: 3rem;
+
+    ul {
+      list-style-type: square;
+      max-width: 800px;
+      margin: auto;
+      padding-left: 1.5rem;
+
+      li {
+        margin-bottom: 0.75rem;
+        font-weight: 500;
+        color: #222;
+      }
+    }
+  }
+
+  // Call-to-action section
+  .cta {
+    margin: 3rem auto;
+    text-align: center;
+    // background: linear-gradient(to right, #423d33, #5cc061);
+    background: #39707b;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    animation: fadeInUp 0.8s ease-in;
+
+    button {
+      background: #fff;
+      color: #3d3dff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      margin-top: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      // Hover effect for button
+      &:hover {
+        background: #3d3dff;
+        color: #fff;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+// Animations
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInStep {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

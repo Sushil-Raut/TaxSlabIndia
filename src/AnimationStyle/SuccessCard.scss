@@ -1,0 +1,68 @@
+// SuccessCard.scss
+
+.success-card {
+    max-width: 400px;
+    background: linear-gradient(to bottom right, #121212, #1e1e1e);
+    color: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+    text-align: left;
+    margin: auto;
+  
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    p {
+      font-size: 0.95rem;
+      color: #ccc;
+      margin-bottom: 1rem;
+    }
+  
+    hr {
+      border: none;
+      border-top: 1px solid #444;
+      margin: 1rem 0;
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+  
+      li {
+        display: flex;
+        align-items: center;
+        margin: 0.6rem 0;
+        font-size: 1rem;
+  
+        .check-icon {
+          color: #00e6e6;
+          margin-right: 0.6rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  
+    .success-btn {
+      width: 100%;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      font-size: 1rem;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 2rem;
+      margin-top: 1.5rem;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 194, 255, 0.4);
+      transition: all 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(0, 194, 255, 0.6);
+      }
+    }
+  }
+  

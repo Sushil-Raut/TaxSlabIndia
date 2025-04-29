@@ -1,0 +1,299 @@
+// .Footer {
+//   background-color: #111; // dark background like GoDaddy
+//   color: #fff;
+//   padding: 3rem 2rem;
+//   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+//   .footer-container {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+//     gap: 2.5rem;
+//     margin-bottom: 3rem;
+//     border-bottom: 1px solid #333;
+//     padding-bottom: 2rem;
+    
+
+//     .footer-section {
+      
+//       h4 {
+//         color: #fff;
+//         font-size: 1.1rem;
+//         margin-bottom: 1rem;
+//         text-transform: uppercase;
+//         font-weight: 600;
+//       }
+
+//       .legal-links a {
+//         text-decoration: none;
+//   color: #aaa;
+//   font-size: 0.95rem;
+//   cursor: pointer;
+//   transition: color 0.3s ease;
+//   display: flex;
+//   flex-direction: column;
+//       }
+
+//       ul {
+//         list-style: none;
+//         padding: 0;
+
+//         li {
+//           margin: 0.4rem 0;
+//           color: #aaa;
+//           font-size: 0.95rem;
+//           cursor: pointer;
+//           transition: color 0.3s ease;
+
+//           &:hover {
+//             color: #00ffcc;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   .footer-bottom {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 1rem 0;
+
+//     .footer-logo-lang-currency {
+//       display: flex;
+//       align-items: center;
+//       gap: 2rem;
+//       font-size: 0.95rem;
+
+//       .footer-logo {
+//         font-size: 1.4rem;
+//         font-weight: bold;
+//         color: #00ffcc;
+//       }
+
+//       .language-select,
+//       .currency-select {
+//         background-color: #1c1c1c;
+//         padding: 0.5rem 1rem;
+//         border-radius: 20px;
+//         cursor: pointer;
+//         transition: background-color 0.3s ease;
+
+//         &:hover {
+//           background-color: #333;
+//         }
+//       }
+//     }
+
+//     .social-icons {
+//       display: flex;
+//       gap: 1rem;
+//       font-size: 1.3rem;
+//       margin-top: 1rem;
+
+//       a {
+//         background-color: #060606;
+//         border-radius: 50%;
+//         padding: 0.6rem;
+//         transition: all 0.3s ease;
+//         cursor: pointer;
+//         color: #fff; // default text color
+
+//         &:hover {
+//           background-color: #797e7d;
+//           color: #111;
+//         }
+
+//         &:nth-child(1) {
+//           background-color: rgb(76, 0, 255);
+//         }
+
+//         &:nth-child(2) {
+//           background-color: #97a7b8; // blue
+//         }
+
+//         &:nth-child(3) {
+//           background-color: #d53509; // green
+//         }
+
+//         &:nth-child(4) {
+//           background-color: rgb(0, 119, 181); // yellow
+//           color: #000; // contrast for yellow bg
+//         }
+
+//         &:nth-child(5) {
+//           background-color: #f51b76; // purple
+//         }
+//       }
+
+//     }
+//   }
+
+//   .footer-legal {
+//     text-align: center;
+//     font-size: 0.85rem;
+//     color: #999;
+//     padding-top: 2rem;
+//     border-top: 1px solid #333;
+
+//     p {
+//       margin-bottom: 0.5rem;
+//       line-height: 1.4;
+//     }
+
+//     .legal-links {
+//       a {
+
+//         padding: 1rem;
+//         cursor: pointer;
+//         transition: color 0.3s ease;
+//         text-decoration: none;
+//         color: white;
+//         font-weight: 500;
+
+//         &:hover {
+//           color: #03c8ff;
+//         }
+//       }
+//     }
+//   }
+
+//   @media (max-width: 768px) {
+//     .footer-logo-lang-currency {
+//       flex-direction: column;
+//       align-items: flex-start;
+//       gap: 1rem;
+//     }
+
+//     .footer-bottom {
+//       flex-direction: column;
+//       align-items: flex-start;
+//     }
+//   }
+// }
+
+.Footer {
+  background-color: #111;
+  color: #ccc;
+  padding: 3rem 2rem 1rem;
+  font-family: "Segoe UI", sans-serif;
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #444;
+
+    .footer-section {
+      h4 {
+        font-size: 1.1rem;
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+
+      .legal-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+
+        a {
+          text-decoration: none;
+          color: #aaa;
+          font-size: 0.95rem;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+    .footer-logo-lang-currency {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.95rem;
+
+      .footer-logo {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #fff;
+      }
+
+      .language-select,
+      .currency-select {
+        color: #aaa;
+      }
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+
+      .icon {
+        font-size: 1.2rem;
+        color: #ccc;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+
+      .facebook {
+        color: #3b5998;
+      }
+      .twitter {
+        color: #1da1f2;
+      }
+      .youtube {
+        color: #ff0000;
+      }
+      .linkedin {
+        color: #0077b5;
+      }
+      .instagram {
+        color: #e1306c;
+      }
+    }
+
+    .footer-legal {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #888;
+      max-width: 900px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer-container {
+      grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+      text-align: center;
+
+      .footer-logo-lang-currency {
+        flex-direction: column;
+      }
+    }
+  }
+}

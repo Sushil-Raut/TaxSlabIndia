@@ -1,0 +1,57 @@
+.cookie-policy-container {
+  max-width: 1200px;
+  margin: -2rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  h1 {
+    font-size: 2.5rem;
+    color: #0a66c2;
+    margin-bottom: 0.6rem;
+    
+  }
+
+  .updated {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 2rem;
+    margin-left: 10px;
+
+  }
+
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+    h2 {
+      font-size: 1.4rem;
+      color: #0a66c2;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      color: #444;
+      margin-top: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #0a66c2;
+      text-decoration: underline;
+
+      &:hover {
+        color: #004182;
+      }
+    }
+  }
+}
