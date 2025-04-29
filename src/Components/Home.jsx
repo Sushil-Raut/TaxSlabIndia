@@ -9,7 +9,6 @@ import slide4 from "../Assets/slide4.jpg";
 import slide5 from "../Assets/slide5.jpg";
 
 const Home = () => {
-  // This is caroasel on Home slide
   const images = [slide1, slide2, slide3, slide4, slide5];
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -173,13 +172,11 @@ const Home = () => {
             ],
           ].map(([title, icon, desc, link], index) => (
             <div key={index} className="service-card">
-              <a href={link} className="service-card-link">
-                {" "}
-                {/* Link wrapping the whole card */}
+              <Link to={link} className="service-card-link">
                 <div className="icon">{icon}</div>
                 <h3>{title}</h3>
                 <p>{desc}</p>
-              </a>
+              </Link>
             </div>
           ))}
         </div>
