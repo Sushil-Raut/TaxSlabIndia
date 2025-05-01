@@ -1,23 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 .about-container {
-  padding: 3rem 1.5rem;
+  // padding: 2rem 2rem;
+  padding: 2rem;
+
   margin: auto;
   font-family: 'Inter', sans-serif;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: #f1f1f1;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
 
   section {
-    background: linear-gradient(135deg, #1f3b4d, #274862);
-    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border-left: 6px solid #1ab9ca;   
+    border-radius: 5px;
     padding: 2.5rem;
-    margin-bottom: 2.5rem;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.3);
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(72, 187, 255, 0.3);
     }
   }
 

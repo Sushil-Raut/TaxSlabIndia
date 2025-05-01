@@ -95,7 +95,7 @@ const Header = () => {
 
       {/* Mobile Header */}
       <div className="mobile-header">
-        <div className="logo">PayrollNexus</div>
+        <div className="logo">TaxSlabIndia</div>
         <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <FaTimes /> : <FaBars />}
         </div>
@@ -112,6 +112,9 @@ const Header = () => {
         <div className="mobile-dropdown">
           <span>SERVICES</span>
           <div className="mobile-dropdown-content">
+          <Link to="/accounting" onClick={() => setMenuOpen(false)}>
+              Accounting Services
+            </Link>
             <Link to="/itrfiling" onClick={() => setMenuOpen(false)}>
               ITR Filing
             </Link>
@@ -130,9 +133,7 @@ const Header = () => {
             <Link to="/payrolloutsorcing" onClick={() => setMenuOpen(false)}>
               Payroll OutSorcing
             </Link>
-            <Link to="/accounting" onClick={() => setMenuOpen(false)}>
-              Accounting Services
-            </Link>
+            
           </div>
         </div>
         <Link to="/blogs" onClick={() => setMenuOpen(false)}>

@@ -9,11 +9,11 @@ import {
   FaShieldAlt,
 } from "react-icons/fa";
 
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
 const ITRFiling = () => {
   // State to hold which tab is active: "DIY" or "Assisted"
-  const [activeTab, setActiveTab] = useState("DIY");
+  // const [activeTab, setActiveTab] = useState("DIY");
 
   const steps = [
     {
@@ -48,168 +48,7 @@ const ITRFiling = () => {
     },
   ];
 
-  // --- DIY PLANS DATA (First set) ---
-  const diyPlansData = [
-    {
-      title: "Salary + 1 House property Plan",
-      price: "₹699 / Year",
-      subtext: "*Exclusive of Taxes",
-      features: [
-        "Single & Multiple Employers",
-        "Single House Property",
-        "Income from Other Sources",
-        "Agriculture Income",
-      ],
-    },
-    {
-      title: "Salary + More than 1 House Property",
-      price: "₹799 / Year",
-      subtext: "*Exclusive of Taxes",
-      features: [
-        "Single & Multiple Employers",
-        "Multiple House Property",
-        "Income from Other Sources",
-        "Agriculture Income",
-      ],
-    },
-    {
-      title: "Business & Professional Plan",
-      price: "₹1,599 / Year",
-      subtext: "*Exclusive of Taxes",
-      features: [
-        "Business Income/Non Audit",
-        "Professional Income/Non Audit",
-        "Multiple House Property",
-        "Income from Other Sources",
-      ],
-    },
-    {
-      title: "Capital Gain Plan",
-      price: "₹1,999 / Year",
-      subtext: "*Exclusive of Taxes",
-      features: [
-        "Capital Gains (Non Audit)",
-        "Salary & Multiple Employers",
-        "Multiple House Property",
-        "Agriculture Income",
-      ],
-    },
-    {
-      title: "Future & Options",
-      price: "₹2,999 / Year",
-      subtext: "*Exclusive of Taxes",
-      features: [
-        "Trading Income (F&O) (Non Audit)",
-        "Intraday Trading Income (Non Audit)",
-        "Multiple House Property",
-        "Agriculture Income",
-      ],
-    },
-    {
-      title: "Crypto Currency Plan",
-      price: "₹3,999 / Year",
-      subtext: "*Exclusive of Taxes",
-      features: [
-        "Crypto Income (Non Audit)",
-        "Salary & Multiple Employers",
-        "Multiple House Property",
-        "Agriculture Income",
-      ],
-    },
-  ];
-
-  // --- ASSISTED PLANS DATA (Second set) ---
-  const assistedPlansData = [
-    {
-      title: "Salary + 1 House property Plan",
-      price: "₹999 / Year",
-      subtext: "*Exclusive of Taxes",
-      features: [
-        "Single & Multiple Employers",
-        "Single House Property",
-        "Income from Other Sources",
-        "Agriculture Income",
-      ],
-    },
-    {
-      title: "Salary + More than 1 House Property",
-      price: "₹1,099 / Year",
-      subtext: "*Exclusive of Taxes",
-      features: [
-        "Single & Multiple Employers",
-        "Multiple House Property",
-        "Income from Other Sources",
-        "Agriculture Income",
-      ],
-    },
-    {
-      title: "Business & Professional Plan",
-      price: "₹2,499 / Year",
-      subtext: "*Exclusive of Taxes",
-      features: [
-        "Business Income (Non Audit)",
-        "Professional Income (Non Audit)",
-        "Multiple House Property",
-        "Income from Other Sources",
-      ],
-    },
-    {
-      title: "Capital Gain Plan",
-      price: "₹2,999 / Year",
-      subtext: "*Exclusive of Taxes",
-      features: [
-        "Capital Gains (Non Audit)",
-        "Salary & Multiple Employers",
-        "Multiple House Property",
-        "Agriculture Income",
-      ],
-    },
-    {
-      title: "Future & Options",
-      price: "₹3,999 / Year",
-      subtext: "*Exclusive of Taxes",
-      features: [
-        "Trading Income (F&O) (Non Audit)",
-        "Intraday Trading Income (Non Audit)",
-        "Multiple House Property",
-        "Agriculture Income",
-      ],
-    },
-    {
-      title: "Crypto Currency Plan",
-      price: "₹4,999 / Year",
-      subtext: "*Exclusive of Taxes",
-      features: [
-        "Crypto Income (Non Audit)",
-        "Salary & Multiple Employers",
-        "Multiple House Property",
-        "Agriculture Income",
-      ],
-    },
-    {
-      title: "NRI: Having Indian Income Return Filing",
-      price: "₹--- / Year",
-      subtext: "*Exclusive of Taxes",
-      features: [
-        "All Indian Income (Non Audit)",
-        "Multiple House Property",
-        "Agriculture Income",
-      ],
-    },
-    {
-      title: "Resident Having Foreign Income Returns",
-      price: "₹--- / Year",
-      subtext: "*Exclusive of Taxes",
-      features: [
-        "Income from Abroad (Non Audit)",
-        "Multiple House Property",
-        "Agriculture Income",
-      ],
-    },
-  ];
-
-  // Decide which data to show based on activeTab
-  const currentPlans = activeTab === "DIY" ? diyPlansData : assistedPlansData;
+ 
 
   return (
     <div className="itr-container">
@@ -275,7 +114,7 @@ const ITRFiling = () => {
       </div>
 
       {/* Why Choose Us Section */}
-      <section className="why-choose-section">
+      <section className="why-choose-section1">
         <h2>Why Should You File ITR?</h2>
         <div className="reasons-grid">
           <div className="reason-card">
@@ -311,50 +150,7 @@ const ITRFiling = () => {
           to claim refunds or carry forward losses must file.
         </p>
       </section>
-      {/* 
-      <section className="plans-toggle">
-        <div className="tab-buttons">
-          <button
-            className={activeTab === "DIY" ? "active" : ""}
-            onClick={() => setActiveTab("DIY")}
-          >
-            DIY
-          </button>
-          <button
-            className={activeTab === "Assisted" ? "active" : ""}
-            onClick={() => setActiveTab("Assisted")}
-          >
-            Assisted
-          </button>
-        </div>
-
-        <div className="plans-grid">
-          {currentPlans.map((plan, index) => (
-            <div className="plan-card" key={index}>
-              <h3 className="plan-title">{plan.title}</h3>
-              <div className="plan-price">{plan.price}</div>
-              <div className="plan-subtext">{plan.subtext}</div>
-              <ul className="plan-features">
-                {plan.features.map((feature, i) => (
-                  <li key={i}>{feature}</li>
-                ))}
-              </ul>
-              <button className="plan-button">Get Started Now</button>
-            </div>
-          ))}
-        </div>
-
-        {activeTab === "Assisted" && (
-          <p className="note-text">
-            *For Balance sheet &amp; P/L / Attestation: ₹1000
-            <br />
-            If you have received any arrears and want to claim relief then need
-            to pay
-            <br />
-            ₹850 GST will be applicable to the base plan amount
-          </p>
-        )}
-      </section> */}
+     
 
       <section className="itr-types">
         <h2>Types of ITR Forms</h2>
