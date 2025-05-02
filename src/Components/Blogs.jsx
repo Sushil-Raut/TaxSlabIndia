@@ -9,14 +9,18 @@ const Blogs = () => {
       <section className="tax-section">
         <h2>Proposed Income Tax Slabs for FY 2025-26 (AY 2026-27) - New Regime</h2>
         <ul>
-          <li> ₹0 - ₹3,00,000: Nil</li>
-          <li>₹3,00,001 - ₹6,00,000: 5%</li>
-          <li>₹6,00,001 - ₹9,00,000: 10%</li>
-          <li>₹9,00,001 - ₹12,00,000: 15%</li>
-          <li>₹12,00,001 - ₹15,00,000: 20%</li>
-          <li>Above ₹15,00,000: 30%</li>
+          <li> ₹0 - ₹4,00,000: Nil</li>
+          <li>₹4,00,001 - ₹8,00,000: 5%</li>
+          <li>₹8,00,001 - ₹12,00,000: 10%</li>
+          <li>₹12,00,001 - ₹16,00,000: 15%</li>
+          <li>₹16,00,001 - ₹20,00,000: 20%</li>
+          <li>₹20,00,001 - ₹24,00,000: 25%</li>
+          <li>Above ₹24,00,000: 30%</li>
         </ul>
         <p><strong>Note:</strong> These rates are proposed and subject to change based on government notifications.</p>
+        <p><strong> Section 87A rebate:</strong> The rebate has been increased, which benefits individuals with taxable income up to ₹7 lakh.</p>
+        <p><strong> Standard deduction:</strong> Salaried individuals now receive a standard deduction of ₹75,000.</p>
+        <p>These updates effectively reduce the tax liability for incomes up to around ₹12.75 lakh.</p>
       </section>
 
       <section className="tax-section">
