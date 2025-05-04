@@ -48,8 +48,6 @@ const ITRFiling = () => {
     },
   ];
 
- 
-
   return (
     <div className="itr-container">
       <div className="itr-section">
@@ -150,7 +148,6 @@ const ITRFiling = () => {
           to claim refunds or carry forward losses must file.
         </p>
       </section>
-     
 
       <section className="itr-types">
         <h2>Types of ITR Forms</h2>
@@ -229,20 +226,37 @@ const ITRFiling = () => {
         </div>
       </section>
 
-      <section className="documents-cards">
+      <section className="Documents-Required">
         <h2>Documents Required</h2>
-        <div className="card">
-          <ul>
-            <li>PAN Card & Aadhaar Card</li>
-            <li>Form 16 (for salaried individuals)</li>
-            <li>Bank Account Details</li>
-            <li>Investment Proofs (80C, 80D, etc.)</li>
-            <li>Capital Gains Statement (if any)</li>
-            <li>Business Income Details (for self-employed)</li>
-          </ul>
+        <div className="reasons-grid">
+          <div className="reason-card">PAN Card & Aadhaar Card</div>
+          <div className="reason-card">Form 16 (for salaried individuals)</div>
+          <div className="reason-card">Bank Account Details</div>
+          <div className="reason-card">Investment Proofs (80C, 80D, etc.)</div>
+          <div className="reason-card">Capital Gains Statement (if any)</div>
+          <div className="reason-card">
+            Business Income Details (for self-employed)
+          </div>
         </div>
       </section>
 
+
+                
+      <section className="how-we-help-card">
+        <h2>How We Help</h2>
+        <p>We simplify the ITR process by:</p>
+        <div className="reasons-grid">
+          <div className="reason-card">Collecting required documents.</div>
+          <div className="reason-card">Evaluating applicable deductions & tax benefits.</div>
+          <div className="reason-card">Filing your ITR accurately and securely.</div>
+          <div className="reason-card">Providing you an acknowledgment receipt (ITR-V).</div>      
+          
+        </div>
+        <Link to="/contact">
+            <button className="btn-contact">Talk to Our Tax Expert</button>
+          </Link>
+      </section>
+{/* 
       <section className="how-we-help-card">
         <h2>How We Help</h2>
         <div className="card">
@@ -257,7 +271,7 @@ const ITRFiling = () => {
             <button className="btn-contact">Talk to Our Tax Expert</button>
           </Link>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

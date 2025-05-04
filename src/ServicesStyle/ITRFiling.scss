@@ -11,7 +11,7 @@ $font-main: 'Segoe UI', sans-serif;
 .itr-container {
   padding: 3rem 2rem;
   background-color: $light-bg;
-  background: #879099;  
+  background: #879099;
   font-family: $font-main;
   color: #333;
   background: linear-gradient(135deg, #0f172a, #1e293b);
@@ -60,7 +60,7 @@ $font-main: 'Segoe UI', sans-serif;
     justify-content: center;
     display: flex;
     text-align: center;
-    
+
     font-weight: 600;
     box-shadow: 0 6px 15px rgba(0, 123, 255, 0.2);
     transition: all 0.3s ease-in-out;
@@ -75,7 +75,7 @@ $font-main: 'Segoe UI', sans-serif;
 .itr-right {
   flex: 1;
   background: lab(60.79% -26.75 -19.45);
-    color: #ddd;
+  color: #ddd;
   padding: 2.2rem;
   border-radius: 14px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
@@ -154,7 +154,7 @@ $font-main: 'Segoe UI', sans-serif;
 // Grid Cards
 .itr-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1.5rem;
   margin-bottom: 4rem;
 }
@@ -236,7 +236,7 @@ $font-main: 'Segoe UI', sans-serif;
 
   h2 {
     font-size: 1.7rem;
-    color: $dark-blue;
+    color: #ffffff;
     text-align: center;
     margin-bottom: 1rem;
   }
@@ -258,17 +258,17 @@ $font-main: 'Segoe UI', sans-serif;
   h2 {
     text-align: center;
     color: white;
-    
+
     margin-bottom: 2rem;
     font-size: 1.8rem;
   }
 
   .itr-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
 
-    .card {      
+    .card {
       background: #081214;
       padding: 1.7rem;
       border-radius: 12px;
@@ -279,11 +279,11 @@ $font-main: 'Segoe UI', sans-serif;
         text-align: center;
         margin-bottom: 0.7rem;
         font-size: 1.3rem;
-        
+
       }
 
       p {
-        font-size: 0.95rem;        
+        font-size: 0.95rem;
         color: #077e82;
       }
     }
@@ -291,8 +291,52 @@ $font-main: 'Segoe UI', sans-serif;
 
 }
 
+
+
+// Documents Required
+// This is Start from Here
+.Documents-Required {
+  padding: 1rem 2rem;
+  background: #081214;
+
+
+  h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2rem;
+  }
+
+  .reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+
+    .reason-card {
+      background-color: #141617;
+
+      padding: 1.5rem;
+      color: #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 500;
+
+      &:hover {
+        transform: scale(1.05);
+        transition: all;
+        box-shadow: 0 6px 20px rgba(0, 188, 212, 0.4);
+      }
+    }
+  }
+}
+
+// Here start How we helped
+
 .how-we-help-card {
-  padding: 4rem 2rem;  
+  padding: 4rem 2rem;
   background: #081214;
   text-align: center;
 
@@ -303,103 +347,60 @@ $font-main: 'Segoe UI', sans-serif;
     font-weight: 700;
   }
 
-  .card {
-    background: #101010;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 2.5rem;
-    border-radius: 1.5rem;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+  p {
+    font-size: 1.1rem;
+    color: #06507a;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
 
-    p {
+  .reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+
+    .reason-card {
+      background-color: #141617;
+
+      padding: 1.5rem;
+      color: #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      text-align: center;
       font-size: 1.1rem;
-      color: #89871b;
-      margin-bottom: 1.5rem;
       font-weight: 500;
-    }
-
-    ol {
-      text-align: left;
-      padding-left: 1.5rem;
-      color: #1e293b;
-      font-size: 1.05rem;
-      line-height: 1.7;
-
-      li {
-        margin-bottom: 0.75rem;
-        position: relative;
-        padding-left: 1.5rem;
-        list-style: none;
-        color: #077e82;
-
-        &::before {
-          content: "✔️";
-          position: absolute;
-          left: 0;
-          top: 0;
-          color: #10b981;
-          font-size: 1rem;
-        }
-      }
-    }
-
-    .btn-contact {
-      margin-top: 2rem;
-      padding: 0.75rem 1.75rem;
-      background: linear-gradient(to right, #14b8a6, #0ea5e9);
-      color: white;
-      font-weight: 600;
-      font-size: 1rem;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: transform 0.2s ease, background 0.3s;
 
       &:hover {
-        background: linear-gradient(to right, #0ea5e9, #14b8a6);
-        
-        transform: translateY(-3px);
-        box-shadow: 0 4px 15px rgba(14, 165, 233, 0.4);
+        transform: scale(1.05);
+        transition: all;
+        box-shadow: 0 6px 20px rgba(0, 188, 212, 0.4);
       }
+    }
+  }
+
+
+  .btn-contact {
+    margin-top: 2rem;
+    padding: 0.75rem 1.75rem;
+    background: linear-gradient(to right, #14b8a6, #0ea5e9);
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s;
+
+    &:hover {
+      background: linear-gradient(to right, #0ea5e9, #14b8a6);
+
+      transform: translateY(-3px);
+      box-shadow: 0 4px 15px rgba(14, 165, 233, 0.4);
     }
   }
 }
 
 
-// Documents Required
-.documents-cards {
-  background: #081214;
-  padding: 2.5rem 0;
-
-  h2 {
-    text-align: center;
-    color: $dark-blue;
-    margin-bottom: 1.5rem;
-  }
-
-  .card {
-    max-width: 600px;
-    margin: 0 auto;
-    background: #fff;
-    background: #0f1415;
-    padding: 1.8rem;
-    border-radius: 14px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
-
-    ul {
-      list-style: disc;
-      padding-left: 1.5rem;
-      
-
-      li {
-        font-size: 1rem;
-        margin-bottom: 0.5rem;        
-        color: #077e82;
-      }
-    }
-  }
-}
 
 // Responsive Design
 @media (max-width: 768px) {

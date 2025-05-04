@@ -33,7 +33,7 @@ const GSTRegistration = () => {
       </section>
 
       {/* ADVANTAGES */}
-      <section className="section light">
+      <section className="section">
         <h2>Why Register for GST?</h2>
         <div className="card-grid">
           <div className="info-card">
@@ -71,7 +71,7 @@ const GSTRegistration = () => {
       </section>
 
       {/* TYPES OF REGISTRATION */}
-      <section className="section light">
+      <section className="section">
         <h2>Types of GST Registration</h2>
         <div className="card-grid">
           <div className="info-card">
@@ -100,24 +100,43 @@ const GSTRegistration = () => {
         </ul>
       </section>
 
-      {/* FAQ SECTION */}
-      <section className="section light">
-        <h2>FAQs</h2>
-        <div className="faq-section">
-          <details>
-            <summary>Is GST required for online selling?</summary>
+      <section className="faq-wrapper">
+      <h2>FAQs</h2>
+      <div className="faq-section">
+        <div className="faq-item">
+          <div className="faq-question">
+            <span className="faq-icon q">Q</span>
+            <h3>Is GST required for online selling?</h3>
+          </div>
+          <div className="faq-answer">
+            <span className="faq-icon a">A</span>
             <p>Yes, mandatory for all online sellers.</p>
-          </details>
-          <details>
-            <summary>How many days to get GST?</summary>
-            <p>Usually within 5-7 working days.</p>
-          </details>
-          <details>
-            <summary>Can I apply voluntarily?</summary>
-            <p>Yes, to avail ITC and grow business.</p>
-          </details>
+          </div>
         </div>
-      </section>
+
+        <div className="faq-item">
+          <div className="faq-question">
+            <span className="faq-icon q">Q</span>
+            <h3>How many days to get GST?</h3>
+          </div>
+          <div className="faq-answer">
+            <span className="faq-icon a">A</span>
+            <p>Usually within 5-7 working days.</p>
+          </div>
+        </div>
+
+        <div className="faq-item">
+          <div className="faq-question">
+            <span className="faq-icon q">Q</span>
+            <h3>Can I apply voluntarily?</h3>
+          </div>
+          <div className="faq-answer">
+            <span className="faq-icon a">A</span>
+            <p>Yes, to avail ITC and grow business.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
       {/* CTA */}
       <section className="highlight">

@@ -10,7 +10,7 @@ const AntyTerms = () => {
       <div className="anty-card">
         <h2>Introduction</h2>
         <p>
-          This Anti-Spam Policy (the “Policy”) sets forth the guidelines and requirements for preventing and combating spam on the EZMYBIZ website (www.ezmybiz.com). By using our website, you agree to comply with this Policy. If you do not agree with this Policy, please do not use our website.
+          This Anti-Spam Policy (the “Policy”) sets forth the guidelines and requirements for preventing and combating spam on the TaxSlabIndia website (www.taxslabindia.com). By using our website, you agree to comply with this Policy. If you do not agree with this Policy, please do not use our website.
         </p>
       </div>
 

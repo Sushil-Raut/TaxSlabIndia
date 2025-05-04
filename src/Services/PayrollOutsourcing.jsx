@@ -8,8 +8,7 @@ const PayrollOutsourcing = () => {
       <section className="hero">
         <h1>Payroll Outsourcing Services</h1>
         <p>
-          Simplify your business operations with our expert payroll solutions –
-          secure, compliant, and stress-free.
+        Simplify and streamline your business operations with our expert payroll solutions, designed to ensure complete compliance, robust data security, and a hassle-free experience—so you can focus on growing your business while we take care of your payroll needs with precision and reliability.
         </p>
       </section>
 
@@ -93,17 +92,17 @@ const PayrollOutsourcing = () => {
           </div>
         </div>
       </section>
-
+      
       <section className="why-choose">
-        <h2>Why Choose PayrollNexus for Payroll Services?</h2>
-        <ul>
-          <li>Dedicated payroll experts</li>
-          <li>Fully automated & cloud-based system</li>
-          <li>100% statutory compliance assurance</li>
-          <li>Responsive support team</li>
-          <li>Custom pricing for startups, SMEs & enterprises</li>
-        </ul>
-      </section>
+      <h2>Why Choose PayrollNexus for Payroll Services?</h2>
+        <div className="reasons-grid">
+          <div className="reason-card">Dedicated payroll experts</div>
+          <div className="reason-card">Fully automated & cloud-based system</div>
+          <div className="reason-card">100% statutory compliance assurance</div>
+          <div className="reason-card">Responsive support team</div>
+          <div className="reason-card">Custom pricing for startups, SMEs & enterprises</div>         
+        </div>
+      </section>  
 
       <div className="cta">
         <h2>Let's Get Started!</h2>

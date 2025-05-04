@@ -4,13 +4,15 @@
 
 .gst-return-container {
   padding: 2rem;
-  background: linear-gradient(to right, #03536b, #02334f);
+  // background: linear-gradient(to right, #03536b, #02334f);
+  // background: 0svw;
   font-family: "Segoe UI", sans-serif;
   color: #f0f4f8;
   min-height: 100vh;
   border-radius: 12px;
   h1{
-    color: rgb(136, 204, 18);
+    // color: rgb(136, 204, 18);
+    color: #ffffff;
   }
   
   .main-heading {
@@ -37,7 +39,9 @@
   section {
     padding: 2rem;
     margin-bottom: 2rem;
-    background: linear-gradient(135deg, #879099, #39707b);
+    // background: linear-gradient(135deg, #879099, #39707b);
+    background: linear-gradient(135deg, #879099, #9cadb0);
+   
     border-radius: 15px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease-in-out;
@@ -49,7 +53,7 @@
     h2 {
       font-size: 2rem;
       margin-bottom: 1.5rem;
-      color: #051519;
+      color: #ffffff;
       text-align: center;
     }
 
@@ -63,7 +67,7 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
       thead {
-        background: linear-gradient(to right, #004aad, #007aff);
+        background: linear-gradient(to right, #0d6579, #046b87);
         color: #ffffff;
 
         th {
@@ -98,6 +102,198 @@
       }
     }
   }
+   // gst-return-section what-is-gst
+   .gst-return-section-what-is-gst{
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #879099, #9cadb0);
+  
+  
+    h2 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 2rem;
+    }
+    p{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+  
+    .reasons-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+  
+      .reason-card {
+        background-color: #355a6c;
+  
+        padding: 1.5rem;
+        color: #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 500;
+  
+        &:hover {
+          transform: scale(1.05);
+          transition: all;
+          box-shadow: 0 6px 20px rgba(0, 188, 212, 0.4);
+        }
+      }
+    }
+  }
+
+   // Required Documents for GST Return Filing
+   .gst-return-section-advantages{
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #879099, #9cadb0);
+  
+  
+    h2 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 2rem;
+    }
+    p{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+  
+    .reasons-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+  
+      .reason-card {
+        background-color: #355a6c;
+  
+        padding: 1.5rem;
+        color: #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 500;
+  
+        &:hover {
+          transform: scale(1.05);
+          transition: all;
+          box-shadow: 0 6px 20px rgba(0, 188, 212, 0.4);
+        }
+      }
+    }
+  }
+
+
+
+  // Required Documents for GST Return Filing
+  .GST-Return-Filing{
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #879099, #9cadb0);
+  
+  
+    h2 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 2rem;
+    }
+  
+    .reasons-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+  
+      .reason-card {
+        background-color: #355a6c;
+  
+        padding: 1.5rem;
+        color: #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 500;
+  
+        &:hover {
+          transform: scale(1.05);
+          transition: all;
+          box-shadow: 0 6px 20px rgba(0, 188, 212, 0.4);
+        }
+      }
+    }
+  }
+
+
+
+
+  // FAQ Questions Start Here 
+  .gst-return-section.faq-section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+  
+    .section-heading {
+      font-size: 32px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #1a1a1a;
+    }
+  
+    .faq-container {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+  
+    .faq-item {
+      border-radius: 8px;
+      overflow: hidden;
+  
+      .faq-question {
+        display: flex;
+        align-items: center;
+        background-color: #f4f4f4;
+        padding: 20px 24px;
+        border-left: 5px solid #00bcd4;
+        font-size: 18px;
+        font-weight: 600;
+        color: #1a1a1a;
+        position: relative;
+  
+        &::before {
+          content: "Q";
+          font-size: 28px;
+          font-weight: 700;
+          color: #00bcd4;
+          margin-right: 16px;
+        }
+      }
+  
+      .faq-answer {
+        display: flex;
+        align-items: flex-start;
+        background-color: #ffffff;
+        padding: 20px 24px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 0 0 6px 6px;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #555555;
+        position: relative;
+  
+        &::before {
+          content: "A";
+          font-size: 28px;
+          font-weight: 700;
+          color: #757575;
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+  
 
   @media (max-width: 768px) {
     .main-heading {

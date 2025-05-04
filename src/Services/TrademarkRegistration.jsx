@@ -16,7 +16,7 @@ const TrademarkRegistration = () => {
             <input type="text" placeholder="Address / (पता) *" />
             <button type="submit">Next</button>
           </form>
-        </div>
+        </div>        
 
         <div className="why-trademark">
           <h2>Why Trademark Registration</h2>
@@ -52,9 +52,11 @@ const TrademarkRegistration = () => {
         </div>
       </section>
 
+
       <section className="steps">
-        <h2>Trademark Registration with PayrollNexus</h2>
-        <div className="step-card">
+      <h2>Trademark Registration with PayrollNexus</h2>
+      <div className="reasons-steps">
+      <div className="step-card">
           <h3>1. Fill Form</h3>
           <p>Fill the form, make payment and get started</p>
         </div>
@@ -66,19 +68,23 @@ const TrademarkRegistration = () => {
           <h3>3. Get Trademark</h3>
           <p>We’ll file your application and deliver your certificate</p>
         </div>
-      </section>
+        </div>
+      </section> 
 
+     
       <section className="advantages">
-        <h2>Advantages of Trademark Registration</h2>
-        <ul>
-          <li>Exclusive right to use the brand name</li>
-          <li>Legal protection</li>
-          <li>Differentiate your product</li>
-          <li>Creates brand asset</li>
-          <li>Enable global registration</li>
-          <li>Builds trust & goodwill</li>
-        </ul>
-      </section>
+      <h2>Advantages of Trademark Registration</h2>
+        <div className="reasons-grid">
+          <div className="reason-card">Exclusive right to use the brand name</div>
+          <div className="reason-card">Legal protection</div>
+          <div className="reason-card">Differentiate your product</div>
+          <div className="reason-card">Creates brand asset</div>
+          <div className="reason-card">Enable global registration</div>         
+          <div className="reason-card">Builds trust & goodwill</div>         
+        </div>
+      </section>  
+
+      
 
       <section className="intro">
         <h2>Introduction to Trademark Registration</h2>
@@ -90,37 +96,90 @@ const TrademarkRegistration = () => {
       </section>
 
       <section className="registration-types">
-        <h2>What Can You Register as a Trademark?</h2>
-        <ul>
-          <li>Name (Signature or personal name)</li>
-          <li>Word (e.g., Google)</li>
-          <li>Number (Alphanumeric combinations)</li>
-          <li>Image (Symbols, shapes, logos)</li>
-          <li>Sound (Audio marks like jingles)</li>
-        </ul>
-      </section>
+      <h2>What Can You Register as a Trademark?</h2>
+        <div className="reasons-grid">
+          <div className="reason-card">Name (Signature or personal name)</div>
+          <div className="reason-card">Word (e.g., Google)</div>
+          <div className="reason-card">Number (Alphanumeric combinations)</div>
+          <div className="reason-card">Image (Symbols, shapes, logos)</div>
+          <div className="reason-card">Sound (Audio marks like jingles)</div>                  
+        </div>
+      </section>  
+     
 
       <section className="classes">
-        <h2>Trademark Classes</h2>
-        <p>Trademark protection is categorized into 45 classes:</p>
-        <ul>
-          <li>Class 9 – Software & Electronics</li>
-          <li>Class 25 – Clothing</li>
-          <li>Class 35 – Business & Advertising</li>
-          <li>Class 41 – Education & Entertainment</li>
-        </ul>
-      </section>
+      <h2>Trademark Classes</h2>
+        <div className="reasons-grid">
+          <div className="reason-card">Class 9 – Software & Electronics</div>
+          <div className="reason-card">Class 25 – Clothing</div>
+          <div className="reason-card">Class 35 – Business & Advertising</div>
+          <div className="reason-card">Class 41 – Education & Entertainment</div>      
+                  
+        </div>
+      </section>  
 
-      <section className="faqs">
-        <h2>FAQs</h2>
-        <ul>
-          <li>What are well-known trademarks?</li>
-          <li>Why register a trademark online?</li>
-          <li>Can two companies own the same trademark?</li>
-          <li>What is the validity period?</li>
-          <li>What are the 4 types of trademarks?</li>
-        </ul>
-      </section>
+
+      <section className="faq-wrapper">
+      <h2>FAQs</h2>
+      <div className="faq-section">
+        <div className="faq-item">
+          <div className="faq-question">
+            <span className="faq-icon q">Q</span>
+            <h3>What are well-known trademarks?</h3>
+          </div>
+          <div className="faq-answer">
+            <span className="faq-icon a">A</span>
+            <p>Well-known trademarks are trademarks that have gained a high level of recognition and reputation among a significant portion of the public — particularly consumers — and are protected even if they are not registered or used in a specific category or country.</p>
+          </div>
+        </div>
+
+        <div className="faq-item">
+          <div className="faq-question">
+            <span className="faq-icon q">Q</span>
+            <h3>Why register a trademark online?</h3>
+          </div>
+          <div className="faq-answer">
+            <span className="faq-icon a">A</span>
+            <p>Registering a trademark online is a convenient, faster, and cost-effective process that allows you to file from anywhere, get instant acknowledgment, track application status, and receive timely updates, all while ensuring secure digital documentation.</p>
+          </div>
+        </div>
+
+        <div className="faq-item">
+          <div className="faq-question">
+            <span className="faq-icon q">Q</span>
+            <h3>Can two companies own the same trademark?</h3>
+          </div>
+          <div className="faq-answer">
+            <span className="faq-icon a">A</span>
+            <p>Yes, two companies can own the same trademark if they operate in entirely different industries or markets where there is no likelihood of consumer confusion. For example, "Delta" is used both by an airline and a faucet manufacturer. Trademark protection is specific to the goods or services it represents, so as long as the use doesn't overlap or mislead consumers, it is legally permitted.</p>
+          </div>
+        </div>
+
+        <div className="faq-item">
+          <div className="faq-question">
+            <span className="faq-icon q">Q</span>
+            <h3>What is the validity period?</h3>
+          </div>
+          <div className="faq-answer">
+            <span className="faq-icon a">A</span>
+            <p>The validity period of a registered trademark in India is 10 years from the date of registration. It can be renewed indefinitely every 10 years by paying the prescribed renewal fee.</p>
+          </div>
+        </div>
+
+        <div className="faq-item">
+          <div className="faq-question">
+            <span className="faq-icon q">Q</span>
+            <h3>What are the 4 types of trademarks?</h3>
+          </div>
+          <div className="faq-answer">
+            <span className="faq-icon a">A</span>
+            <p>The four types of trademarks are: <strong>Product Marks</strong> (used on goods),<strong> Service Marks </strong>(used for services), <strong>Collective Marks</strong> (used by group members to indicate affiliation), and <strong> Certification Marks</strong> (used to show products meet specific standards).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+
 
       <div className="cta">
         <h2>Ready to Get Started?</h2>

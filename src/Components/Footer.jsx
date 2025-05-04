@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../Styles/Footer.scss";
+import { FaXTwitter } from "react-icons/fa6";
 
 import {
   FaFacebookF,
-  FaTwitter,
   FaYoutube,
   FaLinkedinIn,
   FaInstagram,
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="footer-section">
+        {/* <div className="footer-section">
           <h4>Resources</h4>
           <div className="legal-links">
             <Link to="/webmail">Webmail</Link>
@@ -42,16 +42,16 @@ const Footer = () => {
             <Link to="/icann">ICANN Confirmation</Link>
             <Link to="/dev-resources">Designers & Developers</Link>
           </div>
-        </div>
+        </div> */}
 
-        <div className="footer-section">
+        {/* <div className="footer-section">
           <h4>Partner Programs</h4>
           <div className="legal-links">
             <Link to="/affiliates">Affiliates</Link>
             <Link to="/resellers">Reseller Programs</Link>
             <Link to="/esmybiz-pro">EsMyBiz Pro</Link>
           </div>
-        </div>
+        </div> */}
 
         <div className="footer-section">
           <h4>Account</h4>
@@ -83,7 +83,7 @@ const Footer = () => {
             className="icon twitter"
             target="_blank"
           >
-            <FaTwitter />
+            <FaXTwitter />
           </Link>
           <Link
             to="https://www.youtube.com/@codewithsushil"

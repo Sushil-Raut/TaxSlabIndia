@@ -12,7 +12,13 @@
     border-bottom: 1px solid #444;
 
     .footer-section {
+      // display: flex;
+      text-align: center;
+      justify-content: center;
       h4 {
+        // display: flex;
+      text-align: center;
+      justify-content: center;
         font-size: 1.1rem;
         color: #fff;
         margin-bottom: 1rem;
@@ -82,10 +88,10 @@
       }
 
       .facebook {
-        color: #3b5998;
+        color: #f1f5f7;
       }
       .twitter {
-        color: #1da1f2;
+        color: #ada9a9;
       }
       .youtube {
         color: #ff0000;

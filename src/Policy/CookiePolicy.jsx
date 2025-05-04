@@ -10,7 +10,7 @@ const CookiePolicy = () => {
       <div className="card">
         <h2>Introduction</h2>
         <p>
-          This Cookie Policy explains how Ezmybiz.com (“we,” “us,” or “our”) uses cookies and similar technologies when you visit our website [www.ezmybiz.com] (the “Website”). This policy should be read in conjunction with our <a href="/privacy-policy">Privacy Policy</a>, which provides more information about how we collect and use personal data.
+          This Cookie Policy explains how TaxSlabIndia.com (“we,” “us,” or “our”) uses cookies and similar technologies when you visit our website [www.taxslabindia.com] (the “Website”). This policy should be read in conjunction with our <a href="/privacy-policy">Privacy Policy</a>, which provides more information about how we collect and use personal data.
         </p>
       </div>
 

@@ -20,13 +20,12 @@ const Header = () => {
         <div className="container">
           <div className="contact-left">
             <div className="contact-item">
-              <FaWhatsapp className="icon" />
               <a
-                href="https://wa.me/919959081770"
+                href="https://wa.me/918368034246"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                +91-9959081770
+                <FaWhatsapp className="icon" />
               </a>
             </div>
 
@@ -37,7 +36,7 @@ const Header = () => {
 
             <div className="contact-item">
               <FaPhoneAlt className="icon" />
-              <a href="tel:+919959081770">+91-9959081770</a>
+              <a href="tel:+91 8368034246 ">+91 8368034246 </a>
             </div>
           </div>
         </div>
@@ -45,7 +44,11 @@ const Header = () => {
 
       {/* Desktop Navigation */}
       <div className="nav-header desktop-nav">
+        <Link to="/" onClick={() => setMenuOpen(false)}style={{textDecoration:'none'}}>
         <div className="logo">TaxSlabIndia</div>
+            
+          </Link>
+
         <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
           <Link to="/" onClick={() => setMenuOpen(false)}>
             Home
@@ -112,7 +115,7 @@ const Header = () => {
         <div className="mobile-dropdown">
           <span>SERVICES</span>
           <div className="mobile-dropdown-content">
-          <Link to="/accounting" onClick={() => setMenuOpen(false)}>
+            <Link to="/accounting" onClick={() => setMenuOpen(false)}>
               Accounting Services
             </Link>
             <Link to="/itrfiling" onClick={() => setMenuOpen(false)}>
@@ -133,7 +136,6 @@ const Header = () => {
             <Link to="/payrolloutsorcing" onClick={() => setMenuOpen(false)}>
               Payroll OutSorcing
             </Link>
-            
           </div>
         </div>
         <Link to="/blogs" onClick={() => setMenuOpen(false)}>

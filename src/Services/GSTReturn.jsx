@@ -6,10 +6,11 @@ const GSTReturn = () => {
     <>
       <div className="gst-return-container">
         <h1 className="gst-return-heading">GST Return Filing Services</h1>
-
-        <section className="gst-return-section what-is-gst">
-          <h2 className="section-heading">What is GST Return?</h2>
-          <p className="section-description">
+      
+        {/* Here Start First Section */}
+        <section className="gst-return-section-what-is-gst">
+        <h2>What is GST Return?</h2>
+        <p className="section-description">
             GST Return is a process used to declare the Goods and Services Tax
             (GST) liability of a taxpayer. It is an online form that contains
             the details of all the supplies made, input tax credit availed, and
@@ -22,16 +23,18 @@ const GSTReturn = () => {
             Under GST, a registered dealer has to file GST returns that broadly
             include:
           </p>
-          <ul className="list">
-            <li>Purchases</li>
-            <li>Sales</li>
-            <li>Output GST (On sales)</li>
-            <li>Input tax credit (GST paid on purchases)</li>
-          </ul>
-        </section>
+        <div className="reasons-grid">
+          <div className="reason-card">Purchases</div>
+          <div className="reason-card">Sales</div>
+          <div className="reason-card">Output GST (On sales)</div>
+          <div className="reason-card">Input tax credit (GST paid on purchases)</div>                 
+        </div>
+      </section>  
 
-        <section className="gst-return-section who-should-file">
-          <h2 className="section-heading">Who is liable to file GST Returns?</h2>
+        <section className="gst-return-section-who-should-file">
+          <h2 className="section-heading">
+            Who is liable to file GST Returns?
+          </h2>
           <p className="section-description">
             Individuals and businesses who are registered under GST must file
             GST returns. All registered GST taxpayers must file their returns on
@@ -39,24 +42,26 @@ const GSTReturn = () => {
             varies depending on the type of taxpayer.
           </p>
         </section>
-
-        <section className="gst-return-section advantages">
-          <h2 className="section-heading">Advantages of GST Return Filing</h2>
-          <p className="section-description">
+        {/* Here start Advantages of GST Return Filing Section  */}
+        <section className="gst-return-section-advantages">
+        <h2>Advantages of GST Return Filing</h2>
+        <p className="section-description">
             Filing GST returns simplifies tax processes and offers several
             benefits:
           </p>
-          <ul className="list">
-            <li>Removing cascading tax effect</li>
-            <li>Higher threshold for registration</li>
-            <li>Composition scheme for small businesses</li>
-            <li>Simpler online procedure under GST Return</li>
-            <li>Lesser number of compliances</li>
-            <li>Regulating the unorganized sector</li>
-            <li>Defined treatment of E-Commerce</li>
-            <li>Increased efficiency of logistics</li>
-          </ul>
-        </section>
+        <div className="reasons-grid">
+          <div className="reason-card">Removing cascading tax effect</div>
+          <div className="reason-card">Higher threshold for registration</div>
+          <div className="reason-card">Composition scheme for small businesses</div>
+          <div className="reason-card">Simpler online procedure under GST Return</div>
+          <div className="reason-card">Lesser number of compliances</div>         
+          <div className="reason-card">Regulating the unorganized sector</div>         
+          <div className="reason-card">Defined treatment of E-Commerce</div>         
+          <div className="reason-card">Increased efficiency of logistics</div>         
+        </div>
+      </section>
+
+       
 
         <section className="gst-return-section types-of-returns">
           <h2 className="section-heading">Types of GST Returns</h2>
@@ -73,16 +78,66 @@ const GSTReturn = () => {
               <tbody>
                 {[
                   ["01", "GSTR-1", "Outward supplies", "10th of next month"],
-                  ["02", "GSTR-2", "Inward supplies (claim ITC)", "15th of next month"],
-                  ["03", "GSTR-3", "Monthly return with payment", "20th of next month"],
-                  ["04", "GSTR-4", "Composition suppliers (quarterly)", "18th of next month"],
-                  ["05", "GSTR-5", "Non-resident taxable person", "20th of next month"],
-                  ["06", "GSTR-6", "Input service distributor", "13th of next month"],
-                  ["07", "GSTR-7", "Tax deduction details", "10th of next month"],
-                  ["08", "GSTR-8", "E-commerce operators", "10th of next month"],
-                  ["09", "GSTR-9", "Annual return", "31st December of next year"],
-                  ["10", "GSTR-10", "Final return on cancellation", "Within 3 months"],
-                  ["11", "GSTR-11", "UIN holders claiming refund", "28th of next month"],
+                  [
+                    "02",
+                    "GSTR-2",
+                    "Inward supplies (claim ITC)",
+                    "15th of next month",
+                  ],
+                  [
+                    "03",
+                    "GSTR-3",
+                    "Monthly return with payment",
+                    "20th of next month",
+                  ],
+                  [
+                    "04",
+                    "GSTR-4",
+                    "Composition suppliers (quarterly)",
+                    "18th of next month",
+                  ],
+                  [
+                    "05",
+                    "GSTR-5",
+                    "Non-resident taxable person",
+                    "20th of next month",
+                  ],
+                  [
+                    "06",
+                    "GSTR-6",
+                    "Input service distributor",
+                    "13th of next month",
+                  ],
+                  [
+                    "07",
+                    "GSTR-7",
+                    "Tax deduction details",
+                    "10th of next month",
+                  ],
+                  [
+                    "08",
+                    "GSTR-8",
+                    "E-commerce operators",
+                    "10th of next month",
+                  ],
+                  [
+                    "09",
+                    "GSTR-9",
+                    "Annual return",
+                    "31st December of next year",
+                  ],
+                  [
+                    "10",
+                    "GSTR-10",
+                    "Final return on cancellation",
+                    "Within 3 months",
+                  ],
+                  [
+                    "11",
+                    "GSTR-11",
+                    "UIN holders claiming refund",
+                    "28th of next month",
+                  ],
                 ].map(([no, form, detail, due], index) => (
                   <tr key={index}>
                     <td>{no}</td>
@@ -96,22 +151,25 @@ const GSTReturn = () => {
           </div>
         </section>
 
-        <section className="gst-return-section required-documents">
-          <h2 className="section-heading">Required Documents for GST Return Filing</h2>
-          <ul className="list">
-            <li>Invoices issued to persons with GSTIN (B2B)</li>
-            <li>Invoices issued to persons without GSTIN (B2C)</li>
-            <li>Inter-state sales summary</li>
-            <li>HSN-wise goods summary</li>
-            <li>Credit/Debit notes or advance receipts</li>
-          </ul>
-        </section>
+        <section className="GST-Return-Filing">
+        <h2>Required Documents for GST Return Filing</h2>
+        <div className="reasons-grid">
+          <div className="reason-card">Invoices issued to persons with GSTIN (B2B)</div>
+          <div className="reason-card">Invoices issued to persons without GSTIN (B2C)</div>
+          <div className="reason-card">Inter-state sales summary</div>
+          <div className="reason-card">HSN-wise goods summary</div>
+          <div className="reason-card">Credit/Debit notes or advance receipts</div>         
+        </div>
+      </section>     
 
+        {/* FAQ Questions and Answer  */}
         <section className="gst-return-section faq-section">
           <h2 className="section-heading">FAQs</h2>
           <div className="faq-container">
             <div className="faq-item">
-              <h4 className="faq-question">Who is required to file GST Return under the GST Act?</h4>
+              <h4 className="faq-question">
+                Who is required to file GST Return under the GST Act?
+              </h4>
               <p className="faq-answer">
                 Every registered GST taxpayer is required to file GST returns
                 either monthly, quarterly, or annually depending on the business
@@ -120,7 +178,9 @@ const GSTReturn = () => {
             </div>
 
             <div className="faq-item">
-              <h4 className="faq-question">When must I upload my invoice on the GST portal?</h4>
+              <h4 className="faq-question">
+                When must I upload my invoice on the GST portal?
+              </h4>
               <p className="faq-answer">
                 Invoices should be uploaded monthly/quarterly as per your filing
                 cycle. Usually, before the 10th of the next month for GSTR-1.
@@ -128,15 +188,19 @@ const GSTReturn = () => {
             </div>
 
             <div className="faq-item">
-              <h4 className="faq-question">What is the procedure for revising the return under GST?</h4>
+              <h4 className="faq-question">
+                What is the procedure for revising the return under GST?
+              </h4>
               <p className="faq-answer">
-                GST returns once filed cannot be revised. Any changes must be made
-                in the next month’s return through amendments.
+                GST returns once filed cannot be revised. Any changes must be
+                made in the next month’s return through amendments.
               </p>
             </div>
 
             <div className="faq-item">
-              <h4 className="faq-question">What are the consequences of not filing GST returns on time?</h4>
+              <h4 className="faq-question">
+                What are the consequences of not filing GST returns on time?
+              </h4>
               <p className="faq-answer">
                 Late filing attracts interest and a late fee. It can also block
                 e-way bill generation and lead to cancellation of GST
@@ -154,17 +218,39 @@ const GSTReturn = () => {
                 Whether you have a question, want to start a project or simply
                 want to connect.
               </p>
-              <p className="contact-description">Feel free to send me a message in the contact form</p>
+              <p className="contact-description">
+                Feel free to send me a message in the contact form
+              </p>
             </div>
             <div className="right-panel">
               <h2 className="contact-heading">Contact</h2>
               <form className="contact-form">
-                <input className="form-input" type="text" placeholder="Name *" required />
-                <input className="form-input" type="email" placeholder="Email *" required />
-                <input className="form-input" type="text" placeholder="Company" />
+                <input
+                  className="form-input"
+                  type="text"
+                  placeholder="Name *"
+                  required
+                />
+                <input
+                  className="form-input"
+                  type="email"
+                  placeholder="Email *"
+                  required
+                />
+                <input
+                  className="form-input"
+                  type="text"
+                  placeholder="Company"
+                />
                 <input className="form-input" type="tel" placeholder="Phone" />
-                <textarea className="form-textarea" placeholder="Message" rows="4" />
-                <button className="form-button" type="submit">Submit</button>
+                <textarea
+                  className="form-textarea"
+                  placeholder="Message"
+                  rows="4"
+                />
+                <button className="form-button" type="submit">
+                  Submit
+                </button>
               </form>
             </div>
           </div>

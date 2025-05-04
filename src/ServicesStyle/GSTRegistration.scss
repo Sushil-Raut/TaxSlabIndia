@@ -1,188 +1,262 @@
 .gst-registration {
-    padding: 2rem;
-    font-family: 'Segoe UI', sans-serif;
-    // background-color: #e2e4ea;
-    color: #222;
-    // background: linear-gradient(#02334f);
-    background-color: #879099;
+  
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  
 
-  
-    .hero {
-      text-align: center;
-      padding: 1rem 1rem;
-      // background: linear-gradient(135deg, #868a91, #b5bdc8);
-      background: #39707b;
 
-      color: #fff;
-      border-radius: 1rem;
-      margin-bottom: 3rem;
-  
-      h1 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-      }
-  
+  // ===== Hero Section (Top Heading Section) =====
+  .hero{
+    // display: flex;
+    
       p {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        line-height: 1.4;
+        color: #101010;
+        justify-content: center;
+        align-items: center;
+        display: flex;
       }
+   
+  }
+  
+
+  // ===== Generic Section Wrapper =====
+  .section {
+    margin-bottom: 3rem;
+ 
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: #101010;
     }
-  
-    .section {
-      margin-bottom: 3rem;
-  
-      &.light {
-        background: #39707b;
-        padding: 2rem;
-        border-radius: 1rem;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    
+
+    // ===== Card Grid Layout =====
+    .card-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    // ===== Info Cards =====
+    .info-card {
+      background-color: #f1f1f1;
+      border-left: 5px solid #333003;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      transition: all 0.3s ease;
+
+      h4 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: #0a3d91;
       }
-  
-      h2 {
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
+
+      p {
+        font-size: 1rem;
+        line-height: 1.4;
+        
+      }
+
+     
+    }
+
+    // ===== Steps Section =====
+    .steps {
+      display: flex;
+      justify-content: space-around;
+      gap: 1rem;
+      flex-wrap: wrap;
+
+      .step {
+        background: #f1f1f1;
+        border-left: 5px solid #ffc107;
+        padding: 1rem;
+        border-radius: 1rem;
+        flex: 1 1 200px;
         text-align: center;
-        color: #bac0c5;
-      }
-  
-      .card-grid {
-        display: grid;
-        gap: 1.5rem;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      }
-  
-      .info-card {
-        // background: #eaf0ff;
-        background: #39707b;
-        border-left: 5px solid #333003;
-        padding: 1.5rem;
-        border-radius: 1rem;
-        transition: all 0.3s ease;
-  
+
         h4 {
           font-size: 1.2rem;
           margin-bottom: 0.5rem;
-          color: #0a3d91;
         }
-  
+
         p {
           font-size: 1rem;
-          line-height: 1.4;
         }
-  
-        &:hover {
-          background: linear-gradient(135deg, #6d808d, #0c90ab);
-          transform: translateY(-5px);
-        }
-      }
-  
-      .steps {
-        display: flex;
-        justify-content: space-around;
-        gap: 1rem;
-        flex-wrap: wrap;
-  
-        .step {
-          background: #39707b;
-          border-left: 5px solid #ffc107;
-          padding: 1rem;
-          border-radius: 1rem;
-          flex: 1 1 200px;
-          text-align: center;
-  
-          h4 {
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-          }
-  
-          p {
-            font-size: 1rem;
-          }
-        }
-      }
-  
-      .list {
-        list-style: none;
-        padding-left: 0;
-  
-        li {
-          background: #e0f7ff;
-          padding: 0.75rem 1rem;
-          border-radius: 8px;
-          margin-bottom: 0.5rem;
-          border-left: 4px solid #00bcd4;
-        }
-      }
-  
-      .faq-section {
-        details {
-          background: #f0f0f0;
-          padding: 1rem;
-          border-radius: 8px;
-          margin-bottom: 1rem;
-          cursor: pointer;
-  
-          summary {
-            font-weight: 600;
-            font-size: 1rem;
-            cursor: pointer;
-          }
-  
-          p {
-            margin-top: 0.5rem;
-            font-size: 0.95rem;
-          }
-        }
+        
       }
     }
-  
-    .highlight {
-      text-align: center;
-      padding: 3rem 1rem;
-      background: #39707b;
-      color: white;
-      border-radius: 1rem;
-  
-      h3 {
-        font-size: 2rem;
+
+    // ===== Custom List Section =====
+    .list {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        background: #ffffff;
+        padding: 0.75rem 1rem;
+        border-radius: 8px;
+        margin-bottom: 0.5rem;
+        border-left: 4px solid #086d7a;
+      }
+    }
+
+    // ===== FAQ using <details> tag =====
+    .faq-section {
+      details {
+        background: #f0f0f0;
+        padding: 1rem;
+        border-radius: 8px;
         margin-bottom: 1rem;
-      }
-  
-      p {
-        font-size: 1.1rem;
-        margin-bottom: 2rem;
-      }
-  
-      .btn {
-        padding: 0.75rem 2rem;
-        background: #fff;
-        color: #007bff;
-        font-weight: bold;
-        border-radius: 2rem;
-        border: none;
         cursor: pointer;
-        transition: 0.3s ease;
-        font-size: 1rem;
-        box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
-  
-        &:hover {
-          background: #e6f0ff;
-          box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+
+        summary {
+          font-weight: 600;
+          font-size: 1rem;
         }
-      }
-    }
-  
-    @media (max-width: 768px) {
-      .section h2 {
-        font-size: 1.5rem;
-      }
-  
-      .hero h1 {
-        font-size: 2rem;
-      }
-  
-      .highlight h3 {
-        font-size: 1.5rem;
+
+        p {
+          margin-top: 0.5rem;
+          font-size: 0.95rem;
+        }
       }
     }
   }
-  
+
+  // ===== FAQ Wrapper with Q&A Icon Layout =====
+  .faq-wrapper {
+    background-color: #f9f9f9;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #222;
+    }
+
+    .faq-section {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .faq-item {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .faq-question,
+    .faq-answer {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      padding: 18px 24px;
+    }
+
+    .faq-question {
+      background-color: #f1f1f1;
+      border-left: 5px solid #00a5a5;
+
+      h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #000;
+        margin: 0;
+      }
+    }
+
+    .faq-answer {
+      background-color: #fff;
+
+      p {
+        margin: 0;
+        font-size: 1rem;
+        color: #444;
+      }
+    }
+
+    .faq-icon {
+      font-size: 1.4rem;
+      font-weight: bold;
+      width: 30px;
+      height: 30px;
+      min-width: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+
+      &.q {
+        background-color: #e0f2f1;
+        color: #00a5a5;
+      }
+
+      &.a {
+        background-color: #eeeeee;
+        color: #333;
+      }
+    }
+  }
+
+  // ===== Call-to-Action / Register Highlight Section =====
+  .highlight {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #39707b;
+    color: white;
+    border-radius: 1rem;
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      padding: 0.75rem 2rem;
+      background: #fff;
+      color: #007bff;
+      font-weight: bold;
+      border-radius: 2rem;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s ease;
+      font-size: 1rem;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+
+      &:hover {
+        background: #e6f0ff;
+        box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+
+  // ===== Responsive Design for Smaller Screens =====
+  @media (max-width: 768px) {
+    .section h2 {
+      font-size: 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .highlight h3 {
+      font-size: 1.5rem;
+    }
+  }
+}
+

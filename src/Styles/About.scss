@@ -6,39 +6,31 @@
 
   margin: auto;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  // background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: #f1f1f1;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-
-  section {
-    background: rgba(255, 255, 255, 0.06);
-    border-left: 6px solid #1ab9ca;   
-    border-radius: 5px;
-    padding: 2.5rem;
-    margin-bottom: 2rem;
-    backdrop-filter: blur(12px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    &:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 40px rgba(72, 187, 255, 0.3);
+  // background: linear-gradient(135deg, #0f172a, #1e293b);
+  .intro{
+    h2{
+      color: #fff;
     }
   }
 
-  h2, h3 {
-    font-weight: 700;
-    font-size: 2rem;
-    margin-bottom: 1.2rem;
-    color: #f9d923;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-    // border-left: 6px solid #ffb703;
-    // padding-left: 1rem;
-    background: linear-gradient(to right, #f9d923, #fcca46);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+  section {
+    // background: rgba(255, 255, 255, 0.06);
+    border-left: 6px solid #1ab9ca;
+    border-radius: 5px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(1px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
+    // &:hover {
+    //   transform: translateY(-10px);
+    //   box-shadow: 0 20px 40px rgba(72, 187, 255, 0.3);
+    // }
+
+  }
   p {
     font-size: 1.05rem;
     color: #e4e4e4;
@@ -55,7 +47,7 @@
       display: flex;
       align-items: flex-start;
       font-weight: 500;
-      color: #fcca46;
+      color: #f1f1f1;
       position: relative;
       padding-left: 2rem;
       margin-bottom: 1rem;
@@ -63,7 +55,7 @@
 
       &::before {
         content: '✔';
-        color: #38b000;
+        color: #0f747f;
         position: absolute;
         left: 0;
         top: 0;
@@ -82,11 +74,13 @@
       padding: 1.8rem;
     }
 
-    h2, h3 {
+    h2,
+    h3 {
       font-size: 1.5rem;
     }
 
-    ul li, p {
+    ul li,
+    p {
       font-size: 0.95rem;
     }
   }

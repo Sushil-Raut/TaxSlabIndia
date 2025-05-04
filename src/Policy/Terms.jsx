@@ -9,12 +9,12 @@ const Terms = () => {
 
       <h2>Acceptance of Terms</h2>
       <p>
-        By accessing or using the EZMYBIZ website (<a href="https://www.ezmybiz.com" target="_blank" rel="noopener noreferrer">www.ezmybiz.com</a>), you agree to comply with and be bound by these Terms of Use. If you do not agree with these terms, please do not use this website.
+        By accessing or using the TaxSlabIndia website (<a href="https://www.ezmybiz.com" target="_blank" rel="noopener noreferrer">www.ezmybiz.com</a>), you agree to comply with and be bound by these Terms of Use. If you do not agree with these terms, please do not use this website.
       </p>
 
       <h2>Changes to Terms</h2>
       <p>
-        EZMYBIZ reserves the right to change, modify, or revise these Terms of Use at any time. Any changes will be effective immediately upon posting on the website. Your continued use of the website following the posting of changes constitutes your acceptance of those changes.
+      TaxSlabIndia reserves the right to change, modify, or revise these Terms of Use at any time. Any changes will be effective immediately upon posting on the website. Your continued use of the website following the posting of changes constitutes your acceptance of those changes.
       </p>
 
       <h2>Use of the Website</h2>
@@ -29,12 +29,12 @@ const Terms = () => {
 
       <h2>Intellectual Property</h2>
       <p>
-        All content on this website, including text, graphics, logos, images, audio clips, and software, is the property of EZMYBIZ or its content suppliers and protected by intellectual property laws. You may not reproduce, modify, distribute, or republish any content from this website without our prior written consent.
+        All content on this website, including text, graphics, logos, images, audio clips, and software, is the property of TaxSlabIndia or its content suppliers and protected by intellectual property laws. You may not reproduce, modify, distribute, or republish any content from this website without our prior written consent.
       </p>
 
       <h2>User Content</h2>
       <p>
-        By submitting content (e.g., comments, reviews) to the website, you grant EZMYBIZ a non-exclusive, royalty-free, perpetual, irrevocable, and fully sublicensable right to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such content throughout the world in any media.
+        By submitting content (e.g., comments, reviews) to the website, you grant TaxSlabIndia a non-exclusive, royalty-free, perpetual, irrevocable, and fully sublicensable right to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such content throughout the world in any media.
       </p>
 
       <h2>Privacy</h2>
@@ -44,7 +44,7 @@ const Terms = () => {
 
       <h2>Limitation of Liability</h2>
       <p>
-        To the extent permitted by law, EZMYBIZ shall not be liable for any direct, indirect, incidental, special, or consequential damages resulting from the use or inability to use the website, including but not limited to any damages arising from mistakes, omissions, interruptions, deletion of files, errors, defects, delays in operation or transmission, or any failure of performance.
+        To the extent permitted by law, TaxSlabIndia shall not be liable for any direct, indirect, incidental, special, or consequential damages resulting from the use or inability to use the website, including but not limited to any damages arising from mistakes, omissions, interruptions, deletion of files, errors, defects, delays in operation or transmission, or any failure of performance.
       </p>
 
       <h2>Governing Law</h2>

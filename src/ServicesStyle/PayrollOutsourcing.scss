@@ -1,8 +1,7 @@
 .payroll-container {
   // Base container styling
   font-family: 'Poppins', sans-serif;
-  padding: 2rem;
-  background-color: #f9f9ff;
+  padding: 2rem; 
   background: linear-gradient(to right, #03536b, #02334f); // Gradient background for main section
   background: #879099;
  
@@ -13,6 +12,7 @@
     text-align: center;
     margin-bottom: 1rem;
     font-weight: 700;
+    color: #fff;
   }
 
   // Paragraph styling
@@ -29,39 +29,49 @@
     // background: linear-gradient( #02334f);
     background: #39707b;
     padding: 3rem 2rem;
-    border-radius: 20px;
+    border-radius: 5px;
     color: #fff;
     animation: fadeInUp 1s ease-in-out; // Fade-in animation
   }
 
   // Introduction text block
   .intro {
+    background: linear-gradient(135deg, #879099, #39707b);
     margin-top: 3rem;
-    padding: 0 1rem;
+    padding: 2rem;
+    background: #39707b;
     animation: fadeIn 1s ease; // Simple fade-in animation
   }
 
   // Benefits section with cards
   .benefits {
     margin-top: 3rem;
+    padding: 2rem;
+    background: #39707b;
+    
 
     .card-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); // Responsive grid
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); // Responsive grid
       gap: 1.5rem;
+      
+     
       
 
       .card {
         background: #fff;
         // background: linear-gradient(to right, #03536b, #02334f);
         background: #39707b;
-        padding: 1.5rem;
-        border-radius: 15px;
+        padding: 2rem;
+        border-radius: 5px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background: linear-gradient(135deg, #879099, #39707b);
 
         h3 {
           color: #f6f6fa; // Blue heading inside cards
+          text-align: center;
+          justify-content: center;
         }
 
         // Hover effects
@@ -73,10 +83,9 @@
     }
   }
   .process {
-    margin-top: 3rem;            // Same as .intro
-    padding: 3rem 2rem;          // Same as .hero
-    // background: linear-gradient(to right, #3f4717, #02334f);        // Optional light background to separate the section visually
-    border-radius: 20px;         // Optional, for consistency with .hero look
+    margin-top: 1rem;           
+    padding:2rem 2rem;     
+    border-radius: 5px;       
     background: #39707b;
   
     .steps {
@@ -88,10 +97,11 @@
   
       .step {
         // background: #0b658c;
-        background: #39707b;
+        background: linear-gradient(135deg, #879099, #39707b);
+
         padding: 1rem 2rem;
-        border-radius: 12px;
-        min-width: 200px;
+        border-radius: 5px;
+        min-width: 500px;
         text-align: center;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         animation: fadeInStep 0.6s ease-in-out;
@@ -112,20 +122,41 @@
   }
   
 
-  // Why Choose Us section with a list
+  // Why Choose Us section start Here 
   .why-choose {
-    margin-top: 3rem;
-
-    ul {
-      list-style-type: square;
-      max-width: 800px;
-      margin: auto;
-      padding-left: 1.5rem;
-
-      li {
-        margin-bottom: 0.75rem;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    background: #39707b;
+    border-radius: 5px;
+  
+  
+    h2 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 2rem;
+    }
+  
+    .reasons-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+  
+      .reason-card {
+        background: linear-gradient(135deg, #879099, #39707b);
+ 
+        padding: 1.5rem;
+        color: #ddd;
+        border-radius: 5px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        text-align: center;
+        font-size: 1.1rem;
         font-weight: 500;
-        color: #222;
+  
+        &:hover {
+          transform: scale(1.05);
+          transition: all;
+          box-shadow: 0 6px 20px rgba(0, 188, 212, 0.4);
+        }
       }
     }
   }
@@ -136,14 +167,16 @@
     text-align: center;
     // background: linear-gradient(to right, #423d33, #5cc061);
     background: #39707b;
+    // background: linear-gradient(135deg, #879099, #39707b);
+
     color: #fff;
     padding: 2rem;
-    border-radius: 20px;
+    border-radius: 5px;
     animation: fadeInUp 0.8s ease-in;
 
     button {
-      background: #fff;
-      color: #3d3dff;
+      background: #140f41;
+      color: #d4d4e7;
       border: none;
       padding: 0.8rem 1.5rem;
       font-size: 1rem;
@@ -155,7 +188,7 @@
 
       // Hover effect for button
       &:hover {
-        background: #3d3dff;
+        background: #035f7b;
         color: #fff;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
       }
